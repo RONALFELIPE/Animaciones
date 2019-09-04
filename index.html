@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Primera pagina</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Curso Fronted</title>
+   <style type="text/css">
+    .contenedor {
+        background-color: #7be66d;
+        width: 300px;
+        height: 300px;
+        margin: 20px auto;
+    }
+        #animacion1, #animacion2 {
+        animation-duration: 8s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: "animacionburbuja1";
+        -webkit-animation-duration: 8s;
+        -webkit-animation-direction: normal;
+        -webkit-animation-iteration-count: infinite;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; 
+        position: relative;
+        background-color: red;
+    }
+
+    #animacion2 {
+        -webkit-animation-name: "animacionburbuja2";
+        background-color: blue;
+    }
+        @keyframes animacionburbuja1 {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            left: 260px;
+            top: 0px;
+            background-color: blueviolet;
+        }
+        50% {
+            left: 260px;
+            top: 260px;
+        }
+        75% {
+            left: 0px;
+            top: 260px;
+            background-color: aqua;
+        }
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    @keyframes animacionburbuja2 {
+            0%{
+                left:0px;
+                top:-40px;
+                background-color:
+                border-radius:;    
+            }
+            25%    {
+                left:0px;
+                top:220px;
+                background-color:
+                border-radius:;    
+            }
+            50%{
+                left:260px;
+                top:220px;
+                background-color:
+                border-radius:;    
+            }
+            75%{
+                left:260px;
+                top:-40px;
+                background-color:
+                border-radius:;    
+            }
+            100%{
+                left:0px;
+                top:-40px;
+                background-color:
+                border-radius:;    
+            }
+ 
+        
+    }
+        </style>
 </head>
 <body>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eaque necessitatibus aperiam deleniti repellendus magni ipsum quod nemo voluptas quis animi dignissimos non eveniet ducimus fugiat, blanditiis ut eum in.
-    </p>
+  <div class="contenedor">
+      <div id="animacion1">
+      </div>
+      <div id="animacion2">
+      </div>
+  </div>
 </body>
 </html>
